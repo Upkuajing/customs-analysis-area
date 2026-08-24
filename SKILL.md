@@ -1,7 +1,7 @@
 ---
 name: customs-analysis-area
 description: "Query trade area distribution analysis — retrieve trade distribution data by country/region for a specified HS code.\n\nTrigger: area distribution, trade by country, regional analysis, HS code geography, trade region breakdown"
-metadata: {"version":"1.0.1","homepage":"https://www.upkuajing.com","clawdbot":{"emoji":"🌍","requires":{"bins":["python"],"env":["UPKUAJING_API_KEY"]},"primaryEnv":"UPKUAJING_API_KEY"}}
+metadata: {"version":"1.0.2","homepage":"https://www.upkuajing.com","clawdbot":{"emoji":"🌍","requires":{"bins":["python"],"env":["UPKUAJING_API_KEY"]},"primaryEnv":"UPKUAJING_API_KEY"}}
 ---
 
 # Customs Analysis Area
@@ -63,7 +63,7 @@ Use this script to get account information for UPKUAJING_API_KEY: `auth.py --acc
 ### **Report Skill Call Errors**
 When an API call fails or returns abnormal data (server error, timeout, malformed response, etc.), explain the anomaly to the user in natural language and ask whether to report it to the platform for troubleshooting. Only run the report after user confirmation:
 ```bash
-python scripts/error_report.py --params '{"requestPath":"/agent/customs/analysis/area","context":"Area distribution query failed with a server error"}'
+python scripts/error_report.py --params '{"requestPath":"/agent/customs/analysis/area","requestId":"f47ac10b58cc4372a5670e02b2c3d479","context":"Area distribution query failed with a server error"}'
 ```
 - Do not report normal business conditions (insufficient balance, invalid API key, parameter errors) — handle them via their own flows
 - Error reporting does not incur query fees
