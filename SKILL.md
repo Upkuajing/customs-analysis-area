@@ -1,7 +1,7 @@
 ---
 name: customs-analysis-area
 description: "Query trade area distribution analysis — retrieve trade distribution data by country/region for a specified HS code.\n\nTrigger: area distribution, trade by country, regional analysis, HS code geography, trade region breakdown"
-metadata: {"version":"1.0.2","homepage":"https://www.upkuajing.com","clawdbot":{"emoji":"🌍","requires":{"bins":["python"],"env":["UPKUAJING_API_KEY"]},"primaryEnv":"UPKUAJING_API_KEY"}}
+metadata: {"version":"1.0.3","homepage":"https://www.upkuajing.com","clawdbot":{"emoji":"🌍","requires":{"bins":["python"],"env":["UPKUAJING_API_KEY"]},"primaryEnv":"UPKUAJING_API_KEY"}}
 ---
 
 # Customs Analysis Area
